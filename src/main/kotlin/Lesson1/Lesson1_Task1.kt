@@ -1,5 +1,6 @@
 package Lesson1
 
 fun main() {
-    println("Test")
+    var quantityOfOrders = 75
+    val thanksForPurchase = "Спасибо за покупку"
 }
