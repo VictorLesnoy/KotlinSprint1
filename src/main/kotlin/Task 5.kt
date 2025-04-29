@@ -7,5 +7,4 @@ fun main() {
     var hour = String.format("%02d", hours)
     var second = String.format("%02d", sec)
     println(hour + ":" +  minutes + ":" + second)
-
 }
