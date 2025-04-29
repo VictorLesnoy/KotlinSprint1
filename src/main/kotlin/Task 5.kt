@@ -1,9 +1,11 @@
 fun main() {
+    val sixtie = 60
     val seconds = 6480
-    val hours = seconds / 3600
-    val minutes = (seconds - hours *3600) / 60
-    val sec = seconds - hours * 3600 - minutes * 60
-    print("0" + hours)
-    print(":" + minutes + ":")
-    print("0" + sec)
+    val hours = seconds / sixtie / sixtie
+    val minutes = (seconds - hours * sixtie * sixtie) / sixtie
+    val sec = seconds - hours * sixtie * sixtie - minutes * sixtie
+    var hour = String.format("%02d", hours)
+    var second = String.format("%02d", sec)
+    println(hour + ":" +  minutes + ":" + second)
+
 }
