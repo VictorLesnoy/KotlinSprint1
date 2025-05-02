@@ -2,9 +2,9 @@ fun main() {
     val hours = 9
     val minutes = 39
     val onTheWay = 457
-    val minutesOTW = onTheWay % 60
-    val hoursOTW = onTheWay / 60
-    val totalHours = hours + hoursOTW
-    val totalMinutes = minutes + minutesOTW
-    println("Прибытие поезда в $totalHours:$totalMinutes")
+    val timeConstant = 60
+    val totalHours = (onTheWay + (hours * timeConstant)) / timeConstant
+    val totalMinutes = (onTheWay + minutes) % timeConstant
+
+    println("Прибытие поезда в %02d".format(totalHours) + ":%02d".format(totalMinutes))
 }
